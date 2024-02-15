@@ -12,7 +12,8 @@
 
         public MonthName(int monthName, int daysNumMonth)
         {
-
+            month = monthName;
+            daysInMonth = daysNumMonth;
         }
 
         public int MonthNum
@@ -44,7 +45,7 @@
             throw new System.NotImplementedException();
         }
 
-        public void Mnth()
+        public void Month()
         {
             throw new System.NotImplementedException();
         }

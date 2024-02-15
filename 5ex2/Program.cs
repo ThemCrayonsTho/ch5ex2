@@ -10,15 +10,14 @@ namespace _ch5ex2
     {
         static void Main(string[] args)
         {
-
+            InputMonthNum();
         }
-        public static char InputMonthNum()
+        public static string InputMonthNum()
         {
-            string inValue;
-            char monthNum;
+            string monthNum;
             Console.WriteLine("enter month number");
-            inValue = Console.ReadLine();
-            monthNum = Convert.ToChar(inValue);
+            monthNum = Console.ReadLine();
             return monthNum;
         }
+    }
 }
