@@ -10,7 +10,14 @@ namespace _ch5ex2
     {
         static void Main(string[] args)
         {
+            DisplayInstructions();
             InputMonthNum();
+        }
+        public static void DisplayInstructions()
+        {
+            Console.WriteLine("you will enter the month number and will receive the days in that month and its name");
+            Console.ReadKey();
+            Console.Clear();
         }
         public static string InputMonthNum()
         {

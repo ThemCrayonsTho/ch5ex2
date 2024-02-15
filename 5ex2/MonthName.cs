@@ -42,17 +42,17 @@
 
         public override string ToString()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void Month()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void NumberOfDaysInMonth()
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }
