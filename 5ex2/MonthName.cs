@@ -3,17 +3,15 @@
     internal class MonthName
     {
         private int month;
-        private int daysInMonth;
 
         public MonthName()
         {
 
         }
 
-        public MonthName(int monthName, int daysNumMonth)
+        public MonthName(int monthName)
         {
             month = monthName;
-            daysInMonth = daysNumMonth;
         }
 
         public int MonthNum
@@ -28,63 +26,51 @@
             }
         }
 
-        public int DaysInMonth
-        {
-            get
-            {
-                return daysInMonth;
-            }
-            set
-            {
-                daysInMonth = value; ;
-            }
-        }
-
         public override string ToString()
         {
-            
+            return "month: " + Month() + "number of days in the month: " ;
         }
 
-        public int Month()
+        public string Month()
         {
             string monthName;
             switch (month)
             {
-                case '1':
+                case 1:
                     monthName = "January";
                     break;
-                case '2':
+                case 2:
                     monthName = "February";
                     break;
-                case '3':
+                case 3:
                     monthName = "March";
                     break;
-                case '4':
+                case 4:
                     monthName = "April";
                     break;
-                case '5':
+                case 5:
                     monthName = "May";
                     break;
-                case '6':
-                    monthName = "February";
+                case 6:
+                    monthName = "June";
                     break;
-                case '7':
-                    monthName = "March";
+                case 7:
+                    monthName = "July";
                     break;
-                case '8':
-                    monthName = "April";
+                case 8:
+                    monthName = "August";
                     break;
-                case '9':
-                    monthName = "January";
+                case 9:
+                    monthName = "September";
                     break;
-                case "10":
-                    monthName = "February";
+                case 10:
+                    monthName = "October";
                     break;
-                case "11":
-                    monthName = "March";
+                case 11:
+                    monthName = "November";
                     break;
-                case "12":
-                    monthName = "April";
+                case 12:
+                    monthName = "December";
                     break;
                 default:
                     monthName = "unknown";
@@ -92,10 +78,11 @@
             }
             return monthName;
         }
-
-        public void NumberOfDaysInMonth()
-        {
-            
-        }
+        public int NumberOfDays();
+        int numOfDays;
+        switch(monthNumber)
+            {
+            case 
+            }
     }
 }

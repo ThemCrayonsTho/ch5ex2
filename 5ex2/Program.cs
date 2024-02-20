@@ -10,8 +10,26 @@ namespace _ch5ex2
     {
         static void Main(string[] args)
         {
+
+            int monthNumber;
             DisplayInstructions();
-            InputMonthNum();
+            monthNumber = InputMonthNum();
+            MonthName firstTest = new MonthName(monthNumber);
+            Console.WriteLine(firstTest);
+            Console.WriteLine("\n\npress key to start a nother test");
+            Console.ReadKey();
+            Console.Clear();
+            monthNumber = InputMonthNum();
+            MonthName secondTest = new MonthName(monthNumber);
+            Console.WriteLine(secondTest);
+            Console.WriteLine("\n\npress key to start a nother test");
+            Console.ReadKey();
+            Console.Clear();
+            monthNumber = InputMonthNum();
+            MonthName thirdTest = new MonthName(monthNumber);
+            Console.WriteLine(thirdTest);
+            Console.ReadKey();
+            Console.Clear();
         }
         public static void DisplayInstructions()
         {
@@ -19,12 +37,13 @@ namespace _ch5ex2
             Console.ReadKey();
             Console.Clear();
         }
-        public static string InputMonthNum()
+        public static int InputMonthNum()
         {
-            string monthNum;
+            int monthNum;
             Console.WriteLine("enter month number");
             monthNum = Console.ReadLine();
             return monthNum;
         }
+
     }
 }
