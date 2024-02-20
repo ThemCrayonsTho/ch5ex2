@@ -78,11 +78,21 @@
             }
             return monthName;
         }
-        public int NumberOfDays();
+        public int NumberOfDays()
+        {
         int numOfDays;
-        switch(monthNumber)
+        switch()
             {
-            case 
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+
             }
+        }
+        
     }
 }
