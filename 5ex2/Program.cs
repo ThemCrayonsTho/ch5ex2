@@ -16,13 +16,13 @@ namespace _ch5ex2
             monthNumber = InputMonthNum();
             MonthName firstTest = new MonthName(monthNumber);
             Console.WriteLine(firstTest);
-            Console.WriteLine("\n\npress key to start a nother test");
+            Console.WriteLine("\n\npress key to start another test");
             Console.ReadKey();
             Console.Clear();
             monthNumber = InputMonthNum();
             MonthName secondTest = new MonthName(monthNumber);
             Console.WriteLine(secondTest);
-            Console.WriteLine("\n\npress key to start a nother test");
+            Console.WriteLine("\n\npress key to start another test");
             Console.ReadKey();
             Console.Clear();
             monthNumber = InputMonthNum();
@@ -33,7 +33,7 @@ namespace _ch5ex2
         }
         public static void DisplayInstructions()
         {
-            Console.WriteLine("you will enter the month number and will receive the days in that month and its name");
+            Console.WriteLine("you will enter the month number and will receive the days in that month and the month name");
             Console.ReadKey();
             Console.Clear();
         }

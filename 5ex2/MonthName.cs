@@ -3,6 +3,7 @@
     internal class MonthName
     {
         private int month;
+        private int daysInMonth;
 
         public MonthName()
         {
@@ -25,10 +26,21 @@
                 month = value;
             }
         }
+        public int DaysinMonth
+        {
+            get
+            {
+                return daysInMonth;
+            }
+            set
+            {
+                daysInMonth = value;
+            }
+        }
 
         public override string ToString()
         {
-            return "month: " + Month() + "number of days in the month: " ;
+            return "month: " + Month() + "number of days in the month: " + NumberOfDays();
         }
 
         public string Month()
@@ -80,8 +92,8 @@
         }
         public int NumberOfDays()
         {
-        int numOfDays;
-        switch()
+            int numberOfDays;
+            switch (daysInMonth)
             {
                 case 1:
                 case 3:
@@ -90,9 +102,20 @@
                 case 8:
                 case 10:
                 case 12:
-
+                    numberOfDays = 31;
+                    break;
+                case 2:
+                    numberOfDays = 29;
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    numberOfDays = 30;
+                    break;
             }
+            return numberOfDays;
         }
-        
+
     }
 }
